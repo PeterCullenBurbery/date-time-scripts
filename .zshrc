@@ -286,3 +286,13 @@ alias isoordinaldatetimestamp='/home/peter/scripts/date-time-scripts/iso-ordinal
 alias ordinaldatetimestamp='/home/peter/scripts/date-time-scripts/iso-ordinal-date-with-time.sh'
 alias ordinaltimestamp='/home/peter/scripts/date-time-scripts/iso-ordinal-date-with-time.sh'
 alias isoordinaltimestamp='/home/peter/scripts/date-time-scripts/iso-ordinal-date-with-time.sh'
+# Eternal bash history
+# ---------------------
+# Undocumented feature which sets the size to "unlimited".
+export HISTFILESIZE=
+export HISTSIZE=
+export HISTTIMEFORMAT="%G-W%V-%u %H.%M.%S %Z "
+
+
+# Change the file location because certain bash sessions truncate .bash_history file upon close.
+export HISTFILE=~/.bash_eternal_history
